@@ -1,0 +1,346 @@
+html {
+  font-size: 100%;
+  /*16px = 1rem */
+}
+
+body {
+  background-image: url("images/sunset.jpg");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  /*1.1 * 16 = 17px */
+  color: white;
+  width: 100%;
+  margin: 2em auto;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+img {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.myphoto {
+  width: 90%;
+  height: auto;
+}
+
+.img_ref {
+  width: 100%;
+  height: auto;
+}
+
+div {
+  padding: 2px;
+}
+
+nav {
+  font-weight: bold;
+}
+
+header {
+  position: absolute;
+  top: 325px;
+  padding-left: 10px;
+  -webkit-animation: showcase 2s;
+          animation: showcase 2s;
+}
+
+@-webkit-keyframes showcase {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    /*size zero*/
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    /*zero to normal size */
+  }
+}
+
+@keyframes showcase {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    /*size zero*/
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    /*zero to normal size */
+  }
+}
+
+.learn_more {
+  color: #fff;
+}
+
+.learn_more:hover {
+  color: #b4a3a3;
+}
+
+.volunteerlogo {
+  display: block;
+  border-radius: 25px;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.volunteer_org {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.myForm {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr 1fr;
+      grid-template-columns: auto 1fr 1fr;
+  /*2  columns */
+  grid-auto-flow: row dense;
+  /*the "dense" value fills holes in the grid */
+  grid-gap: 0.8em;
+  background: #333;
+  opacity: 0.8;
+  padding: 1.2em;
+}
+
+.myForm > label {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  /*first column for the labels */
+  grid-row: auto;
+}
+
+.myForm > input,
+.myForm > button {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  /*second column for the inputs*/
+  grid-row: auto;
+  padding: 0.5em;
+  border: none;
+}
+
+.myForm textarea {
+  min-height: 100px;
+  width: 100%;
+  border: none;
+}
+
+#comment-box {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  /*third column for the comments section*/
+  grid-row: span 3;
+}
+
+.myForm > button {
+  -ms-grid-column: 2;
+  grid-column: 2 / 2;
+  /*buttons will cover second column*/
+}
+
+.form {
+  position: relative;
+  top: 25px;
+  width: 90%;
+  height: auto;
+  margin-left: 50px;
+  margin-bottom: 25px;
+}
+
+.socialmedia {
+  position: relative;
+  top: 50px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.socialmedia > h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.social_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid #b3aeae;
+  padding-top: 1.25rem;
+  margin: 45px;
+}
+
+.social_list li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+  list-style-type: none;
+  width: 50px;
+}
+
+.social_list li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.image-stack {
+  padding: 100px;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.image-top {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  position: relative;
+  opacity: 0.7;
+}
+
+.header-top {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding: 20px;
+  margin: auto;
+  position: relative;
+}
+
+.header-middle,
+.header-bottom {
+  padding: 20px;
+  margin: auto;
+}
+
+.image-middle {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  opacity: 0.7;
+}
+
+.image-bottom {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.minimal {
+  opacity: 0.7;
+  width: 75%;
+  height: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .intro {
+    background-image: url("images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  header {
+    position: absolute;
+    top: 250px;
+  }
+  .form {
+    position: relative;
+    top: 20px;
+    padding-left: 20px;
+    margin: 0;
+    /*will center the form element */
+  }
+  .myForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    /*shorthand for flex-direction and flex-wrap*/
+    margin-bottom: 25px;
+  }
+  .socialmedia {
+    position: relative;
+    text-align: center;
+    top: 50px;
+    width: 100%;
+    padding-right: 75px;
+    padding-left: 15px;
+    margin: auto;
+  }
+  .learn_more {
+    margin: auto;
+    padding: 120px;
+  }
+  .volunteer_org {
+    font-size: 1rem;
+  }
+  .image-stack {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding-left: 45px;
+  }
+  .minimal {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  header {
+    position: relative;
+    top: 250px;
+  }
+  .volunteerlogo {
+    width: 80%;
+    height: auto;
+  }
+  .myForm textarea {
+    min-height: 150px;
+    width: 100%;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body,
+  .intro {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=mystyle.css.map */
